@@ -3,10 +3,10 @@
 * single page app using vue.js   
 
 ## uses:
-1. vue.js
-2. JavaScript
-3. HTML 
-4. CSS 
+* vue.js
+* JavaScript
+* HTML 
+* CSS 
 
 ## Features:
 * Adding and removeing tasks from the list 
