@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/first.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="img/ToDoListIcon3.png">
@@ -10,7 +11,9 @@
 </head>
 
 <body>
+
     <div id="app">
+
 
         <!--the navigation bar-->
         <div id="nav" :style="{backgroundColor:mainDiv.backcolor}">
@@ -25,8 +28,6 @@
                 <p id="set-text" style="margin-left: 27px; margin-top: -27px;"> {{isDark? 'Light Mode':'Dark Mode'}} </p>
             </div>
         </div>
-
-
 
         <!-- the cystme div -->
         <div id="custm" v-if="setings">
@@ -139,7 +140,19 @@
                 <img @click="changeTheam('#7ec160','#523525')" src="img/theam7.png" alt="thim 3">
             </button>
         </div>
+
     </div>
+    <div class="animation-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
     <script src="js/vue.js"></script>
     <script src="js/first.js"></script>
 
