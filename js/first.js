@@ -1,5 +1,5 @@
 var todolist = new Vue({
-    el: '#app',
+    el: '#all',
     data: {
         mainDiv: {
             backcolor: '#7d2b2b',
