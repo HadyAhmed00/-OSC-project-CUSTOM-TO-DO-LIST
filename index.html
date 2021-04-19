@@ -11,6 +11,7 @@
 
 <body>
     <div id="app">
+<<<<<<< HEAD
 
         <!--the navigation bar-->
         <div id="nav" :style="{backgroundColor:mainDiv.backcolor}">
@@ -30,6 +31,14 @@
 
         <!-- the cystme div -->
         <div id="custm" v-if="setings">
+=======
+        <nav id="nav" :style="{backgroundColor:mainDiv.backcolor}">
+            <p id="in"> CUSTOM TO DO LIST
+            </p>
+            <p id="colors"> Full RGB in hexadecimal form <a href="https://htmlcolorcodes.com/" id="color-link" target="_blank">her</a></p>
+        </nav>
+        <div id="custm">
+>>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
 
             <div id="box" class="iso">
                 <label class="title">Custom Box</label>
@@ -79,9 +88,13 @@
                 </ul>
             </div>
         </div>
+<<<<<<< HEAD
 
         <!--the to do list -->
         <div id="todolist" :class=" setings? 'change' : 'alone' " :style="{background:mainDiv.backcolor,color:mainDiv.textColor,borderRadius:mainDiv.borderRd+'px',boxShadow: '-20px -20px 0px 0px'+mainDiv.borderColor }">
+=======
+        <div id="todolist" :style="{background:mainDiv.backcolor,color:mainDiv.textColor,borderRadius:mainDiv.borderRd+'px',boxShadow: '-20px -20px 0px 0px'+mainDiv.borderColor }">
+>>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
             <h1>
                 Todo List
                 <span>Get things done, one item at a time.</span>
@@ -112,8 +125,12 @@
             </form>
         </div>
 
+<<<<<<< HEAD
         <!--the theams div-->
         <div id="theams" v-if="setings">
+=======
+        <div id="theams">
+>>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
             <button class="theam-btn" @click="changeTheam('#7d2b2b','#434343')">
                 <img @click="changeTheam('#7d2b2b','#434343')" src="img/theam0.png" alt="thim 1">
             </button>
