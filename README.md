@@ -19,7 +19,9 @@
 
 <br>
 
-## See the app demo from [here](https://drive.google.com/file/d/1xGyfo81WxPYENXVYheE6MeDxyRH1LxmR/view?usp=sharing)
+## See The Project demo from [here](https://drive.google.com/file/d/1xGyfo81WxPYENXVYheE6MeDxyRH1LxmR/view?usp=sharing)
+
+## View the project [here](https://hadyahmed00.github.io/-OSC-project-CUSTOM-TO-DO-LIST/)
 
 <br>
 
