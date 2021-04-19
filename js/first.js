@@ -20,11 +20,8 @@ var todolist = new Vue({
         newitem: '',
         isEmpty: true,
         todo: [],
-<<<<<<< HEAD
         setings: false,
         isDark: false,
-=======
->>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
         fontsList: ['Berlin Sans FB', 'Monospace', 'Fantasy', 'Cursive', 'Serif', 'Sans-serif', 'Robot', 'Dancing Script']
 
     },
@@ -57,7 +54,6 @@ var todolist = new Vue({
             this.mainDiv.borderColor = shado;
             this.li.backcolor = shado;
             this.btn.backcolor = shado;
-<<<<<<< HEAD
         },
         darkMode: function() {
             if (this.isDark) {
@@ -65,8 +61,6 @@ var todolist = new Vue({
             } else {
                 document.body.style.backgroundColor = "white";
             }
-=======
->>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
         }
 
     },

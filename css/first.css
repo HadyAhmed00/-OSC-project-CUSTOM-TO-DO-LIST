@@ -6,17 +6,10 @@
 
 html,
 body {
-<<<<<<< HEAD
     font-size: 1.1rem;
     font-family: 'Berlin Sans FB', sans-serif;
     height: 100%;
     transition: all 1s;
-=======
-    background: #FFF;
-    font-size: 1.1rem;
-    font-family: 'Berlin Sans FB', sans-serif;
-    height: 100%;
->>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
 }
 
 
@@ -35,7 +28,6 @@ body {
     color: #FFF;
 }
 
-<<<<<<< HEAD
 #set-btn {
     width: 200px;
     scale: (1.2, 1.2);
@@ -50,8 +42,6 @@ body {
     animation: onit 0.6s forwards;
 }
 
-=======
->>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
 #colors {
     margin-left: 900px;
     margin-top: -20px;
@@ -185,12 +175,6 @@ body {
 /* to do list styling */
 
 #todolist {
-<<<<<<< HEAD
-=======
-    margin-bottom: 50px;
-    margin-left: 80px;
-    margin-top: -1200px;
->>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
     padding: 2rem 3rem 3rem;
     max-width: 500px;
     box-shadow: -20px -20px 0px 0px #434343;
@@ -199,7 +183,6 @@ body {
     transition: background 0.6s;
 }
 
-<<<<<<< HEAD
 .alone {
     margin: 0 auto;
     margin-top: 50px;
@@ -211,8 +194,6 @@ body {
     margin-top: -1200px;
 }
 
-=======
->>>>>>> feab8458de5f962ba6fbb06e36c648cce8c443e1
 #todolist h1 {
     font-weight: normal;
     font-size: 2.6rem;
