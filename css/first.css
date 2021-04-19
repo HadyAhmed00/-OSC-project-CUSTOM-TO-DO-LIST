@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #FFF;
+    font-size: 1.1rem;
+    font-family: 'Berlin Sans FB', sans-serif;
+    height: 100%;
+}
+
+
+/* NAV bare*/
+
+#nav {
+    background: #7d2b2b;
+    height: 50px;
+    float: top;
+    transition: background 1s;
+}
+
+#in {
+    padding-left: 40px;
+    padding-top: 10px;
+    color: #FFF;
+}
+
+#colors {
+    margin-left: 900px;
+    margin-top: -20px;
+    color: #FFF;
+}
+
+#color-link {
+    color: blue;
+}
+
+#color-link:focus {
+    outline: none;
+}
+
+
+/* custumaizatino styling */
+
+#custm {
+    margin-left: 900px;
+    margin-top: 0px;
+    animation: formRight 1.2s;
+}
+
+.input {
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 38px;
+}
+
+.input[type="color"] {
+    border: 1.5px solid;
+    border-color: #7d2b2b;
+}
+
+.input[type="number"] {
+    width: 100px;
+}
+
+.range[type="range"] {
+    margin-left: 10px;
+}
+
+.input[type="color"]:hover,
+.range[type="range"]:hover {
+    outline: #7d2b2b;
+    background: #434343;
+    animation: onit 0.5s forwards;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.title {
+    margin-left: 150px;
+}
+
+.iso {
+    margin: 5px;
+    width: 400px;
+    margin-left: -10px;
+    padding: 5px;
+    /*  border: 2px solid black;*/
+}
+
+.lable {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*the fonts list*/
+
+#fonts {
+    /* margin-left: 900px;
+    margin-top: 345px;*/
+    margin-bottom: 50PX;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+#fonts ul {
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+#fonts #fist {
+    height: 50px;
+    background-color: #7d2b2b;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 1s;
+}
+
+#fonts .items {
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    height: 40px;
+    border: 1px #434343 solid;
+}
+
+#fonts .items:hover {
+    background: #434343;
+    color: #FFF;
+    transition: background 0.5s;
+}
+
+
+/* thems */
+
+#theams {
+    /*margin-top: -600px;*/
+    margin-left: 50px;
+}
+
+#theams .theam-btn {
+    border: none;
+}
+
+#theams .theam-btn:hover {
+    animation: onit 0.5s forwards;
+    cursor: pointer;
+}
+
+#theams .theam-btn:focus {
+    outline: none;
+}
+
+
+/* to do list styling */
+
+#todolist {
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-top: -1200px;
+    padding: 2rem 3rem 3rem;
+    max-width: 500px;
+    box-shadow: -20px -20px 0px 0px #434343;
+    border-color: #7d2b2b;
+    animation: formLeft 1.3s;
+    transition: background 0.6s;
+}
+
+#todolist h1 {
+    font-weight: normal;
+    font-size: 2.6rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #fff;
+}
+
+#todolist h1 span {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    margin-left: 3px;
+    margin-top: 0.2rem;
+}
+
+#todolist .emptylist {
+    margin-top: 2.6rem;
+    text-align: center;
+    letter-spacing: .05em;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+#todolist ul {
+    margin-top: 2.6rem;
+    list-style: none;
+}
+
+#todolist li {
+    display: flex;
+    margin: 0 -3rem 4px;
+    padding: 1.1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #434343;
+    transition: background .2s ease-out;
+}
+
+#card {
+    padding-top: 50px;
+}
+
+#todolist li:hover {
+    animation: onit ease-out 0.6s forwards;
+}
+
+#todolist .actions {
+    flex-shrink: 0;
+    padding-left: 0.7em;
+}
+
+#todolist .label {
+    position: relative;
+    transition: opacity .3s linear;
+}
+
+#todolist .done .label {
+    opacity: .7;
+    text-decoration: line-through;
+}
+
+#todolist .btn-picto {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+#todolist .btn-picto:focus {
+    outline: none;
+}
+
+
+/* FORM */
+
+form {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form label {
+    min-width: 100%;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+}
+
+form input {
+    flex-grow: 1;
+    border: none;
+    background: #f7f1f1;
+    padding: 0 1.5em;
+    font-size: initial;
+}
+
+form button {
+    padding: 0 1.3rem;
+    border: none;
+    background: #434343;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, .3);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background .2s ease-out;
+}
+
+form button:hover {
+    animation: onit 0.6s forwards;
+}
+
+form input,
+form button {
+    font-family: 'Berlin Sans FB';
+    font-weight: normal;
+    height: 3rem;
+}
+
+
+/* key frams animatino */
+
+@keyframes onFocs {
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 400px;
+    }
+}
+
+@keyframes onit {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+@keyframes formLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-90px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes formRight {
+    0% {
+        opacity: 0;
+        transform: translateX(90px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
