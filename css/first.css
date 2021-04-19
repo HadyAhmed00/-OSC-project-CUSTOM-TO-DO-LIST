@@ -160,6 +160,7 @@ body {
 
 #theams .theam-btn {
     border: none;
+    background: transparent
 }
 
 #theams .theam-btn:hover {
