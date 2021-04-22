@@ -1,5 +1,5 @@
 # [OSC]project CUSTOM TO DO LIST
-![Banner](https://github.com/HadyAhmed00/-OSC-project-CUSTOM-TO-DO-LIST/blob/main/img/readme_img.png)
+![Banner](https://github.com/HadyAhmed00/-OSC-project-CUSTOM-TO-DO-LIST/blob/main/img/readme_pic.png)
 * single page app using vue.js   
 
 ## uses:
