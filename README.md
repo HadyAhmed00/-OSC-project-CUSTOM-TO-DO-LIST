@@ -3,13 +3,13 @@
 * single page app using vue.js   
 
 ## uses:
-* vue.js
-* JavaScript
+* JavaScript (using vue.js library)
 * HTML 
 * CSS 
 
 ## Features:
 * Adding and removeing tasks from the list 
+* Dark Mode
 * Customize the theme of all page 
 * validating the input of the list
 * 8 different presets
@@ -18,10 +18,8 @@
 
 
 <br>
-
-## See The Project demo from [here](https://drive.google.com/file/d/1xGyfo81WxPYENXVYheE6MeDxyRH1LxmR/view?usp=sharing)
-
 ## View the project from [here](https://hadyahmed00.github.io/-OSC-project-CUSTOM-TO-DO-LIST/)
 
+## See The Project demo from [here](https://drive.google.com/file/d/1xGyfo81WxPYENXVYheE6MeDxyRH1LxmR/view?usp=sharing)
 <br>
 
