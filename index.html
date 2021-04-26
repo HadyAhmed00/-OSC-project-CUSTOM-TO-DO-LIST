@@ -14,24 +14,23 @@
     <div id="all">
         <div id="app">
 
-
             <!--the navigation bar-->
             <div id="nav" :style="{backgroundColor:mainDiv.backcolor}">
                 <p id="in"> {{setings? 'customization of the To Do list':'To do list'}}
                 </p>
-                <div id="set-btn" @click="setings=!setings">
-                    <span class="material-icons" id="set-icon">{{ setings? 'checklist':'tune' }} </span>
-                    <p id="set-text" style="margin-left: 27px; margin-top: -27px;"> {{setings? 'Back to the list':'Custom'}} </p>
+                <div class="nav-btn" @click="setings=!setings">
+                    <span class="material-icons" class="nav-icon">{{ setings? 'checklist':'tune' }} </span>
+                    <p class="nav-text" style="margin-left: 27px; margin-top: -27px;"> {{setings? 'Back to the list':'Custom'}} </p>
                 </div>
-                <div id="set-btn" @click="isDark=!isDark;darkMode()" style="margin-left: 1081px;">
-                    <span class="material-icons" id="set-icon">{{ isDark? 'light_mode':'dark_mode' }} </span>
-                    <p id="set-text" style="margin-left: 27px; margin-top: -27px;"> {{isDark? 'Light Mode':'Dark Mode'}} </p>
+                <div class="nav-btn" @click="isDark=!isDark;darkMode()" style="margin-left: 1081px;">
+                    <span class="material-icons" class="nav-icon">{{ isDark? 'light_mode':'dark_mode' }} </span>
+                    <p class="nav-text" style="margin-left: 27px; margin-top: -27px;"> {{isDark? 'Light Mode':'Dark Mode'}} </p>
                 </div>
             </div>
 
-            <!-- the cystme div -->
+            <!-- the cystme divs-->
             <div id="custm" v-if="setings">
-
+                <!--The big box and the shadow of the to do list box custum -->
                 <div id="box" class="iso">
                     <label class="title">Custom Box</label>
                     <hr class="split title" :style="{borderColor:mainDiv.backcolor}" style="width: 95px;">
@@ -46,6 +45,7 @@
                     <input type="range" class="range" v-model="mainDiv.borderRd" name="size" min="0" max="100" step="1"><br><br>
                 </div>
                 <hr :style="{borderColor:mainDiv.backcolor}" style="width: 400px;  border: 2px solid;">
+                <!-- The custumisations of the list item or the to do list card -->
                 <div id="li" class="iso">
                     <label class="title"> Custom Task Card </label>
                     <hr class="split title" :style="{borderColor:mainDiv.backcolor}" style="width: 150px;">
@@ -58,6 +58,7 @@
                     <input type="range" class="range" v-model="li.borderRd" name="size" min="0" max="50" step="1"><br><br>
                 </div>
                 <hr :style="{borderColor:mainDiv.backcolor}" style="width: 400px; border: 2px solid;">
+                <!--The custumizations of the add to list btn -->
                 <div id="btn" class="iso">
                     <label id="btn" class="title"> Custom Add Task button</label>
                     <hr class="split title" :style="{borderColor:mainDiv.backcolor}" style="width: 175px;">
@@ -70,6 +71,7 @@
                     <input type="range" class="range" v-model="btn.borderRd" name="size" min="0" max="30" step="1"><br><br>
                 </div>
                 <br>
+                <!-- this div contain a list of all fontes taken form list in the js file  -->
                 <div id="fonts">
                     <p id="fist" :style="{backgroundColor:mainDiv.backcolor}"> chose your font</p>
                     <ul>
@@ -116,29 +118,36 @@
             <!--the theams div-->
             <div id="theams" v-if="setings">
                 <button class="theam-btn" @click="changeTheam('#7d2b2b','#434343')">
-                <img @click="changeTheam('#7d2b2b','#434343')" src="img/theam0.png" alt="thim 1">
-            </button>
+                        <img @click="changeTheam('#7d2b2b','#434343')" src="img/theam0.png" alt="thim 1">
+                    </button>
+
                 <button class="theam-btn" @click="changeTheam('#1c1e26','#cd806a')">
-                <img @click="changeTheam('#1c1e26','#cd806a')" src="img/theam1.png" alt="thim 2">
-            </button>
+                        <img @click="changeTheam('#1c1e26','#cd806a')" src="img/theam1.png" alt="thim 2">
+                    </button>
+
                 <button class="theam-btn" @click="changeTheam('#313131','#f67416')">
-                <img @click="changeTheam('#313131','#f67416')" src="img/theam2.png" alt="thim 3">
-            </button>
+                        <img @click="changeTheam('#313131','#f67416')" src="img/theam2.png" alt="thim 3">
+                    </button>
+
                 <button class="theam-btn" @click="changeTheam('#003b56','#6bde3b')">
-                <img @click="changeTheam('#003b56','#6bde3b')" src="img/theam3.png" alt="thim 4">
-            </button><br>
+                        <img @click="changeTheam('#003b56','#6bde3b')" src="img/theam3.png" alt="thim 4">
+                    </button><br>
+
                 <button class="theam-btn" @click="changeTheam('#f35588','#484b4b')">
-                <img @click="changeTheam('#f35588','#484b4b')" src="img/theam4.png" alt="thim 3">
-            </button>
+                        <img @click="changeTheam('#f35588','#484b4b')" src="img/theam4.png" alt="thim 3">
+                    </button>
+
                 <button class="theam-btn" @click="changeTheam('#859900','#e3ba4a')">
-                <img @click="changeTheam('#859900','#e3ba4a')" src="img/theam5.png" alt="thim 3">
-            </button>
+                        <img @click="changeTheam('#859900','#e3ba4a')" src="img/theam5.png" alt="thim 3">
+                    </button>
+
                 <button class="theam-btn" @click="changeTheam('#190618','#e0caac')">
-                <img @click="changeTheam('#190618','#e0caac')" src="img/theam6.png" alt="thim 3">
-            </button>
+                        <img @click="changeTheam('#190618','#e0caac')" src="img/theam6.png" alt="thim 3">
+                    </button>
+
                 <button class="theam-btn" @click="changeTheam('#7ec160','#523525')">
-                <img @click="changeTheam('#7ec160','#523525')" src="img/theam7.png" alt="thim 3">
-            </button>
+                        <img @click="changeTheam('#7ec160','#523525')" src="img/theam7.png" alt="thim 3">
+                    </button>
             </div>
 
         </div>
